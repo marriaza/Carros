@@ -1,0 +1,2292 @@
+@charset "utf-8";
+/* CSS Document */
+
+.ares.tparrows {
+     background: #ffffff none repeat scroll 0% 0%;
+     border-radius: 50%;
+     cursor: pointer;
+     display: block;
+     min-height: 60px;
+     min-width: 60px;
+     position: absolute;
+     z-index: 100;
+}
+
+.ares.tparrows:hover {
+    
+}
+
+.ares.tparrows::before {
+     color: #aaaaaa;
+     display: block;
+     font-family: "revicons";
+     font-size: 25px;
+     line-height: 60px;
+     position: relative;
+     text-align: center;
+     transition: color 0.3s ease 0s;
+     z-index: 2;
+}
+
+.ares.tparrows.tp-leftarrow::before {
+     content: "";
+}
+
+.ares.tparrows.tp-rightarrow::before {
+     content: "";
+}
+
+.ares.tparrows:hover::before {
+     color: #000000;
+}
+
+.ares .tp-title-wrap {
+     background: #ffffff none repeat scroll 0% 0%;
+     border-radius: 0px 30px 30px 0px;
+     display: inline-block;
+     line-height: 60px;
+     margin-left: 30px;
+     min-height: 60px;
+     overflow: hidden;
+     position: absolute;
+     top: 0px;
+     transform-origin: 0% 50% 0px;
+     transform: scaleX(0);
+     transition: transform 0.3s ease 0s;
+     z-index: 1;
+}
+
+.ares.tp-rightarrow .tp-title-wrap {
+     border-radius: 30px 0px 0px 30px;
+     margin-left: 0px;
+     margin-right: 30px;
+     right: 0px;
+}
+
+.ares.tparrows:hover .tp-title-wrap {
+     transform: scaleX(1) scaleY(1);
+}
+
+.ares .tp-arr-titleholder {
+     color: #000000;
+     font-size: 14px;
+     font-weight: 400;
+     line-height: 60px;
+     margin-left: 10px;
+     opacity: 0;
+     padding: 0px 20px;
+     position: relative;
+     text-transform: uppercase;
+     transform: translateX(200px);
+     transition: transform 0.3s ease 0s;
+     white-space: nowrap;
+}
+
+.ares.tp-rightarrow .tp-arr-titleholder {
+     margin-left: 0px;
+     margin-right: 10px;
+     transform: translateX(-200px);
+}
+
+.ares.tparrows:hover .tp-arr-titleholder {
+     opacity: 1;
+     transform: translateX(0px);
+     transition-delay: 0.1s;
+}
+
+.ares.tp-bullets {
+    
+}
+
+.ares.tp-bullets::before {
+     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%;
+     box-sizing: content-box;
+     content: " ";
+     height: 100%;
+     margin-left: -10px;
+     margin-top: -10px;
+     padding: 10px;
+     position: absolute;
+     width: 100%;
+}
+
+.ares .tp-bullet {
+     background: #e5e5e5 none repeat scroll 0% 0%;
+     border-radius: 50%;
+     box-sizing: content-box;
+     cursor: pointer;
+     height: 13px;
+     position: absolute;
+     width: 13px;
+}
+
+.ares .tp-bullet:hover, .ares .tp-bullet.selected {
+     background: #ffffff none repeat scroll 0% 0%;
+}
+
+.ares .tp-bullet-title {
+     background: rgba(255, 255, 255, 0.75) none repeat scroll 0% 0%;
+     color: #888888;
+     font-size: 12px;
+     font-weight: 600;
+     line-height: 20px;
+     padding: 0px 10px;
+     position: absolute;
+     right: 27px;
+     top: -4px;
+     transform: translateX(-20px);
+     transition: transform 0.3s ease 0s;
+     visibility: hidden;
+     white-space: nowrap;
+}
+
+.ares .tp-bullet-title::after {
+     border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(255, 255, 255, 0.75);
+     border-style: solid;
+     border-width: 10px 0px 10px 10px;
+     content: " ";
+     height: 0px;
+     position: absolute;
+     right: -10px;
+     top: 0px;
+     width: 0px;
+}
+
+.ares .tp-bullet:hover .tp-bullet-title {
+     transform: translateX(0px);
+     visibility: visible;
+}
+
+.ares .tp-bullet.selected:hover .tp-bullet-title {
+     background: #ffffff none repeat scroll 0% 0%;
+}
+
+.ares .tp-bullet.selected:hover .tp-bullet-title::after {
+     border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #ffffff;
+}
+
+.ares.tp-bullets:hover .tp-bullet-title {
+     visibility: hidden;
+}
+
+.ares.tp-bullets:hover .tp-bullet:hover .tp-bullet-title {
+     visibility: visible;
+}
+
+.ares .tp-tab {
+     border-bottom: 1px solid #e5e5e5;
+     box-sizing: border-box;
+     font-family: "Roboto",sans-serif;
+     opacity: 1;
+     padding: 10px;
+}
+
+.ares .tp-tab-image {
+     display: inline-block;
+     float: left;
+     height: 60px;
+     max-height: 100%;
+     max-width: 100%;
+     position: relative;
+     width: 60px;
+}
+
+.ares .tp-tab-content {
+     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%;
+     box-sizing: border-box;
+     color: #333333;
+     display: inline-block;
+     height: 100%;
+     left: 0px;
+     margin-top: -15px;
+     overflow: hidden;
+     padding: 15px 15px 15px 85px;
+     position: absolute;
+     width: 100%;
+}
+
+.ares .tp-tab-date {
+     color: #aaaaaa;
+     display: block;
+     font-size: 12px;
+     font-weight: 500;
+     margin-bottom: 0px;
+}
+
+.ares .tp-tab-title {
+     color: #333333;
+     display: block;
+     font-size: 14px;
+     font-weight: 500;
+     line-height: 17px;
+     text-align: left;
+     text-transform: none;
+}
+
+.ares .tp-tab:hover, .ares .tp-tab.selected {
+     background: #eeeeee none repeat scroll 0% 0%;
+}
+
+.ares .tp-tab-mask {
+    
+}
+
+@media only screen and (max-width: 960px) {
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+.custom.tparrows {
+     background: rgba(0, 0, 0, 0.5) none repeat scroll 0% 0%;
+     cursor: pointer;
+     display: block;
+     height: 40px;
+     position: absolute;
+     width: 40px;
+     z-index: 100;
+}
+
+.custom.tparrows:hover {
+     background: #000000 none repeat scroll 0% 0%;
+}
+
+.custom.tparrows::before {
+     color: #ffffff;
+     display: block;
+     font-family: "revicons";
+     font-size: 15px;
+     line-height: 40px;
+     text-align: center;
+}
+
+.custom.tparrows.tp-leftarrow::before {
+     content: "";
+}
+
+.custom.tparrows.tp-rightarrow::before {
+     content: "";
+}
+
+.custom.tp-bullets {
+    
+}
+
+.custom.tp-bullets::before {
+     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%;
+     box-sizing: content-box;
+     content: " ";
+     height: 100%;
+     margin-left: -10px;
+     margin-top: -10px;
+     padding: 10px;
+     position: absolute;
+     width: 100%;
+}
+
+.custom .tp-bullet {
+     background: rgba(125, 125, 125, 0.5) none repeat scroll 0% 0%;
+     box-sizing: content-box;
+     cursor: pointer;
+     height: 12px;
+     position: absolute;
+     width: 12px;
+}
+
+.custom .tp-bullet:hover, .custom .tp-bullet.selected {
+     background: #7d7d7d none repeat scroll 0% 0%;
+}
+
+.custom .tp-bullet-image {
+    
+}
+
+.custom .tp-bullet-title {
+    
+}
+
+.dione.tparrows {
+     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%;
+     height: 100%;
+     line-height: 100%;
+     transition: all 0.3s ease 0s;
+     width: 100px;
+}
+
+.dione.tparrows:hover {
+     background: rgba(0, 0, 0, 0.45) none repeat scroll 0% 0%;
+}
+
+.dione .tp-arr-imgwrapper {
+     height: 100%;
+     left: 0px;
+     overflow: hidden;
+     position: absolute;
+     top: 0px;
+     width: 100px;
+}
+
+.dione.tp-rightarrow .tp-arr-imgwrapper {
+     left: auto;
+     right: 0px;
+}
+
+.dione .tp-arr-imgholder {
+     background-position: center center;
+     background-size: cover;
+     height: 100%;
+     left: 0px;
+     opacity: 0;
+     top: 0px;
+     transform: translateX(-50px);
+     transition: all 0.3s ease 0s;
+     visibility: hidden;
+     width: 100px;
+}
+
+.dione.tparrows.tp-rightarrow .tp-arr-imgholder {
+     left: auto;
+     right: 0px;
+     transform: translateX(50px);
+}
+
+.dione.tparrows::before {
+     font-size: 30px;
+     left: 50%;
+     line-height: 30px;
+     margin-left: -22px;
+     margin-top: -15px;
+     position: absolute;
+     top: 50%;
+     transition: all 0.3s ease 0s;
+}
+
+.dione.tparrows.tp-rightarrow::before {
+     margin-left: 6px;
+}
+
+.dione.tparrows:hover::before {
+     opacity: 0;
+     transform: translateX(-20px);
+}
+
+.dione.tparrows.tp-rightarrow:hover::before {
+     transform: translateX(20px);
+}
+
+.dione.tparrows:hover .tp-arr-imgholder {
+     opacity: 1;
+     transform: translateX(0px);
+     visibility: visible;
+}
+
+.dione .tp-bullet {
+     background: rgba(0, 0, 0, 0.25) none repeat scroll 0% 0%;
+     box-sizing: border-box;
+     height: 50px;
+     margin: 0px;
+     opacity: 1;
+     padding: 3px;
+     transition: all 0.3s ease 0s;
+     width: 50px;
+}
+
+.dione .tp-bullet-image {
+     background-position: center center;
+     background-size: cover;
+     box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25) inset;
+     box-sizing: border-box;
+     display: block;
+     height: 44px;
+     position: relative;
+     width: 44px;
+}
+
+.dione .tp-bullet-title {
+     background: rgba(0, 0, 0, 0.75) none repeat scroll 0% 0%;
+     border-radius: 4px;
+     bottom: 65px;
+     color: #ffffff;
+     display: inline-block;
+     left: 50%;
+     opacity: 0;
+     padding: 10px 30px;
+     position: absolute;
+     transform-origin: 50% 100% 0px;
+     transform: translateZ(0.001px) translateX(-50%) translateY(14px);
+     transition: all 0.3s ease 0s;
+     white-space: nowrap;
+}
+
+.dione .tp-bullet:hover .tp-bullet-title {
+     opacity: 1;
+     transform: rotateX(0deg) translateX(-50%);
+}
+
+.dione .tp-bullet.selected, .dione .tp-bullet:hover {
+     background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #ffffff 0%, #777777 100%) repeat scroll 0% 0%;
+}
+
+.dione .tp-bullet-title::after {
+     border-color: rgba(0, 0, 0, 0.75) rgba(0, 0, 0, 0) transparent;
+     border-style: solid;
+     border-width: 8px 8px 0px;
+     bottom: -8px;
+     content: " ";
+     height: 0px;
+     left: 50%;
+     margin-left: -8px;
+     position: absolute;
+     width: 0px;
+}
+
+.erinyen.tparrows {
+     background: rgba(0, 0, 0, 0.5) none repeat scroll 0% 0%;
+     border-radius: 35px;
+     cursor: pointer;
+     display: block;
+     min-height: 70px;
+     min-width: 70px;
+     position: absolute;
+     z-index: 100;
+}
+
+.erinyen.tparrows::before {
+     color: #ffffff;
+     display: block;
+     font-family: "revicons";
+     font-size: 20px;
+     line-height: 70px;
+     position: relative;
+     text-align: center;
+     z-index: 2;
+}
+
+.erinyen.tparrows.tp-leftarrow::before {
+     content: "";
+}
+
+.erinyen.tparrows.tp-rightarrow::before {
+     content: "";
+}
+
+.erinyen .tp-title-wrap {
+     background: rgba(0, 0, 0, 0.5) none repeat scroll 0% 0%;
+     border-radius: 35px;
+     display: inline-block;
+     line-height: 70px;
+     margin-left: 0px;
+     min-height: 70px;
+     opacity: 0;
+     overflow: hidden;
+     position: absolute;
+     top: 0px;
+     transform: scale(0);
+     transition: opacity 0.3s ease 0s;
+     visibility: hidden;
+     z-index: 1;
+}
+
+.erinyen.tparrows:hover .tp-title-wrap {
+     opacity: 1;
+     transform: scale(1);
+     visibility: visible;
+}
+
+.erinyen.tp-rightarrow .tp-title-wrap {
+     border-radius: 35px;
+     margin-left: 0px;
+     margin-right: 0px;
+     padding-left: 10px;
+     padding-right: 20px;
+     right: 0px;
+}
+
+.erinyen.tp-leftarrow .tp-title-wrap {
+     padding-left: 20px;
+     padding-right: 10px;
+}
+
+.erinyen .tp-arr-titleholder {
+     color: #ffffff;
+     font-size: 13px;
+     font-weight: 600;
+     letter-spacing: 3px;
+     line-height: 70px;
+     margin-left: 11px;
+     opacity: 0;
+     padding: 0px 20px;
+     position: relative;
+     text-transform: uppercase;
+     transform: translateX(200px);
+     transition: transform 0.3s ease 0s;
+     white-space: nowrap;
+}
+
+.erinyen .tp-arr-imgholder {
+     background-position: center center;
+     background-size: cover;
+     height: 100%;
+     left: 0px;
+     position: absolute;
+     top: 0px;
+     width: 100%;
+}
+
+.erinyen .tp-arr-img-over {
+     background: rgba(0, 0, 0, 0.5) none repeat scroll 0% 0%;
+     height: 100%;
+     left: 0px;
+     position: absolute;
+     top: 0px;
+     width: 100%;
+}
+
+.erinyen.tp-rightarrow .tp-arr-titleholder {
+     margin-left: 0px;
+     margin-right: 11px;
+     transform: translateX(-200px);
+}
+
+.erinyen.tparrows:hover .tp-arr-titleholder {
+     opacity: 1;
+     transform: translateX(0px);
+     transition-delay: 0.1s;
+}
+
+.erinyen.tp-bullets {
+    
+}
+
+.erinyen.tp-bullets::before {
+     background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #555555 0%, #222222 100%) repeat scroll 0% 0%;
+     border-radius: 10px;
+     box-shadow: 0px 0px 2px 1px rgba(33, 33, 33, 0.3);
+     box-sizing: content-box;
+     content: " ";
+     height: 100%;
+     margin-left: -15px;
+     margin-top: -10px;
+     padding: 10px 15px;
+     position: absolute;
+     width: 100%;
+}
+
+.erinyen .tp-bullet {
+     background: #111111 none repeat scroll 0% 0%;
+     border-radius: 50%;
+     box-sizing: content-box;
+     cursor: pointer;
+     height: 13px;
+     position: absolute;
+     width: 13px;
+}
+
+.erinyen .tp-bullet:hover, .erinyen .tp-bullet.selected {
+     background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #e5e5e5 0%, #999999 100%) repeat scroll 0% 0%;
+     border: 1px solid #555555;
+     height: 12px;
+     width: 12px;
+}
+
+.erinyen .tp-bullet-image {
+    
+}
+
+.erinyen .tp-bullet-title {
+    
+}
+
+.erinyen .tp-thumb {
+     opacity: 1;
+}
+
+.erinyen .tp-thumb-over {
+     background: rgba(0, 0, 0, 0.25) none repeat scroll 0% 0%;
+     height: 100%;
+     left: 0px;
+     position: absolute;
+     top: 0px;
+     transition: all 0.3s ease 0s;
+     width: 100%;
+     z-index: 1;
+}
+
+.erinyen .tp-thumb-more::before {
+     color: rgba(255, 255, 255, 0.75);
+     display: block;
+     font-family: "revicons";
+     font-size: 12px;
+     line-height: 12px;
+     position: absolute;
+     right: 20px;
+     text-align: left;
+     top: 20px;
+     z-index: 2;
+}
+
+.erinyen .tp-thumb-more::before {
+     content: "";
+}
+
+.erinyen .tp-thumb-title {
+     box-sizing: border-box;
+     color: #ffffff;
+     display: block;
+     font-family: "Raleway";
+     font-size: 12px;
+     font-weight: 500;
+     height: 100%;
+     left: 0px;
+     letter-spacing: 1px;
+     line-height: 15px;
+     padding: 20px 35px 20px 20px;
+     position: absolute;
+     text-align: left;
+     top: 0px;
+     transition: all 0.3s ease 0s;
+     width: 100%;
+     z-index: 2;
+}
+
+.erinyen .tp-thumb.selected .tp-thumb-more::before, .erinyen .tp-thumb:hover .tp-thumb-more::before {
+     color: #aaaaaa;
+}
+
+.erinyen .tp-thumb.selected .tp-thumb-over, .erinyen .tp-thumb:hover .tp-thumb-over {
+     background: #ffffff none repeat scroll 0% 0%;
+}
+
+.erinyen .tp-thumb.selected .tp-thumb-title, .erinyen .tp-thumb:hover .tp-thumb-title {
+     color: #000000;
+}
+
+.erinyen .tp-tab-title {
+     color: #a8d8ee;
+     font-family: "Roboto Slab";
+     font-size: 13px;
+     font-weight: 700;
+     margin-bottom: 5px;
+     text-transform: uppercase;
+}
+
+.erinyen .tp-tab-desc {
+     color: #ffffff;
+     font-family: "Roboto Slab";
+     font-size: 18px;
+     font-weight: 400;
+     line-height: 25px;
+}
+
+.gyges.tp-bullets {
+    
+}
+
+.gyges.tp-bullets::before {
+     background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #777777 0%, #666666 100%) repeat scroll 0% 0%;
+     border-radius: 10px;
+     box-sizing: content-box;
+     content: " ";
+     height: 100%;
+     margin-left: -10px;
+     margin-top: -10px;
+     padding: 10px;
+     position: absolute;
+     width: 100%;
+}
+
+.gyges .tp-bullet {
+     background: #333333 none repeat scroll 0% 0%;
+     border-radius: 50%;
+     border: 3px solid #444444;
+     box-sizing: content-box;
+     cursor: pointer;
+     height: 12px;
+     position: absolute;
+     width: 12px;
+}
+
+.gyges .tp-bullet:hover, .gyges .tp-bullet.selected {
+     background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #ffffff 0%, #e1e1e1 100%) repeat scroll 0% 0%;
+}
+
+.gyges .tp-bullet-image {
+    
+}
+
+.gyges .tp-bullet-title {
+    
+}
+
+.gyges .tp-thumb {
+     opacity: 1;
+}
+
+.gyges .tp-thumb-img-wrap {
+     background: rgba(0, 0, 0, 0.25) none repeat scroll 0% 0%;
+     box-sizing: border-box;
+     display: inline-block;
+     height: 100%;
+     margin: 0px;
+     padding: 3px;
+     position: relative;
+     transition: all 0.3s ease 0s;
+     width: 100%;
+}
+
+.gyges .tp-thumb-image {
+     box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25) inset;
+     box-sizing: border-box;
+     display: block;
+     padding: 3px;
+     position: relative;
+}
+
+.gyges .tp-thumb-title {
+     background: rgba(255, 255, 255, 0.8) none repeat scroll 0% 0%;
+     border-radius: 4px;
+     bottom: 100%;
+     display: inline-block;
+     left: 50%;
+     margin-bottom: 20px;
+     opacity: 0;
+     padding: 10px 30px;
+     position: absolute;
+     transform-origin: 50% 100% 0px;
+     transform: translateZ(0.001px) translateX(-50%) translateY(14px);
+     transition: all 0.3s ease 0s;
+     white-space: nowrap;
+}
+
+.gyges .tp-thumb:hover .tp-thumb-title {
+     opacity: 1;
+     transform: rotateX(0deg) translateX(-50%);
+}
+
+.gyges .tp-thumb:hover .tp-thumb-img-wrap, .gyges .tp-thumb.selected .tp-thumb-img-wrap {
+     background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #ffffff 0%, #777777 100%) repeat scroll 0% 0%;
+}
+
+.gyges .tp-thumb-title::after {
+     border-color: rgba(255, 255, 255, 0.8) rgba(0, 0, 0, 0) transparent;
+     border-style: solid;
+     border-width: 8px 8px 0px;
+     bottom: -8px;
+     content: " ";
+     height: 0px;
+     left: 50%;
+     margin-left: -8px;
+     position: absolute;
+     width: 0px;
+}
+
+.gyges .tp-tab {
+     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+     box-sizing: border-box;
+     font-family: "Roboto",sans-serif;
+     opacity: 1;
+     padding: 10px;
+}
+
+.gyges .tp-tab-image {
+     display: inline-block;
+     float: left;
+     height: 60px;
+     max-height: 100%;
+     max-width: 100%;
+     position: relative;
+     width: 60px;
+}
+
+.gyges .tp-tab-content {
+     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%;
+     box-sizing: border-box;
+     color: #333333;
+     display: inline-block;
+     height: 100%;
+     left: 0px;
+     margin-top: -15px;
+     overflow: hidden;
+     padding: 15px 15px 15px 85px;
+     position: absolute;
+     width: 100%;
+}
+
+.gyges .tp-tab-date {
+     color: rgba(255, 255, 255, 0.25);
+     display: block;
+     font-size: 12px;
+     font-weight: 500;
+     margin-bottom: 0px;
+}
+
+.gyges .tp-tab-title {
+     color: #ffffff;
+     display: block;
+     font-size: 14px;
+     font-weight: 500;
+     line-height: 17px;
+     text-align: left;
+     text-transform: none;
+}
+
+.gyges .tp-tab:hover, .gyges .tp-tab.selected {
+     background: rgba(0, 0, 0, 0.5) none repeat scroll 0% 0%;
+}
+
+.gyges .tp-tab-mask {
+    
+}
+
+@media only screen and (max-width: 960px) {
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+.hades.tparrows {
+     background: rgba(0, 0, 0, 0.15) none repeat scroll 0% 0%;
+     cursor: pointer;
+     display: block;
+     height: 100px;
+     position: absolute;
+     width: 100px;
+     z-index: 100;
+}
+
+.hades.tparrows::before {
+     color: #ffffff;
+     display: block;
+     font-family: "revicons";
+     font-size: 30px;
+     line-height: 100px;
+     text-align: center;
+     transition: background 0.3s ease 0s, color 0.3s ease 0s;
+}
+
+.hades.tparrows.tp-leftarrow::before {
+     content: "";
+}
+
+.hades.tparrows.tp-rightarrow::before {
+     content: "";
+}
+
+.hades.tparrows:hover::before {
+     background: #ffffff none repeat scroll 0% 0%;
+     color: #aaaaaa;
+}
+
+.hades .tp-arr-allwrapper {
+     background: #888888 none repeat scroll 0% 0%;
+     height: 100px;
+     left: 100%;
+     opacity: 0;
+     position: absolute;
+     top: 0px;
+     transform-origin: 0% 50% 0px;
+     transform: rotateY(-90deg);
+     transition: all 0.3s ease 0s;
+     width: 100px;
+}
+
+.hades.tp-rightarrow .tp-arr-allwrapper {
+     left: auto;
+     right: 100%;
+     transform-origin: 100% 50% 0px;
+     transform: rotateY(90deg);
+}
+
+.hades:hover .tp-arr-allwrapper {
+     opacity: 1;
+     transform: rotateY(0deg);
+}
+
+.hades .tp-arr-iwrapper {
+    
+}
+
+.hades .tp-arr-imgholder {
+     background-size: cover;
+     height: 100%;
+     left: 0px;
+     position: absolute;
+     top: 0px;
+     width: 100%;
+}
+
+.hades .tp-arr-titleholder {
+    
+}
+
+.hades .tp-arr-subtitleholder {
+    
+}
+
+.hades.tp-bullets {
+    
+}
+
+.hades.tp-bullets::before {
+     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%;
+     box-sizing: content-box;
+     content: " ";
+     height: 100%;
+     margin-left: -10px;
+     margin-top: -10px;
+     padding: 10px;
+     position: absolute;
+     width: 100%;
+}
+
+.hades .tp-bullet {
+     background: #888888 none repeat scroll 0% 0%;
+     border: 5px solid #ffffff;
+     box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.2);
+     box-sizing: content-box;
+     cursor: pointer;
+     height: 3px;
+     position: absolute;
+     transform: translateZ(0.01px);
+     width: 3px;
+}
+
+.hades .tp-bullet:hover, .hades .tp-bullet.selected {
+     background: #555555 none repeat scroll 0% 0%;
+}
+
+.hades .tp-bullet-image {
+     background-position: center center;
+     background-size: cover;
+     box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.2);
+     height: 60px;
+     left: -60px;
+     opacity: 0;
+     position: absolute;
+     top: -80px;
+     transform-origin: 50% 100% 0px;
+     transform-style: flat;
+     transform: rotateX(-90deg);
+     transition: all 0.3s ease 0s;
+     visibility: hidden;
+     width: 120px;
+}
+
+.hades .tp-bullet:hover .tp-bullet-image {
+     display: block;
+     opacity: 1;
+     transform: rotateX(0deg);
+     visibility: visible;
+}
+
+.hades .tp-bullet-title {
+    
+}
+
+.hades .tp-thumb {
+     opacity: 1;
+}
+
+.hades .tp-thumb-img-wrap {
+     background: rgba(0, 0, 0, 0.25) none repeat scroll 0% 0%;
+     border-radius: 50%;
+     box-sizing: border-box;
+     display: inline-block;
+     height: 100%;
+     margin: 0px;
+     padding: 3px;
+     position: relative;
+     transition: all 0.3s ease 0s;
+     width: 100%;
+}
+
+.hades .tp-thumb-image {
+     border-radius: 50%;
+     box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25) inset;
+     box-sizing: border-box;
+     display: block;
+     padding: 3px;
+     position: relative;
+}
+
+.hades .tp-thumb:hover .tp-thumb-img-wrap, .hades .tp-thumb.selected .tp-thumb-img-wrap {
+     background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #ffffff 0%, #777777 100%) repeat scroll 0% 0%;
+}
+
+.hades .tp-thumb-title::after {
+     border-color: rgba(0, 0, 0, 0.75) rgba(0, 0, 0, 0) transparent;
+     border-style: solid;
+     border-width: 8px 8px 0px;
+     bottom: -8px;
+     content: " ";
+     height: 0px;
+     left: 50%;
+     margin-left: -8px;
+     position: absolute;
+     width: 0px;
+}
+
+.hades .tp-tab {
+     opacity: 1;
+}
+
+.hades .tp-tab-title {
+     color: #333333;
+     display: block;
+     font-size: 18px;
+     font-weight: 600;
+     line-height: 25px;
+     text-align: center;
+}
+
+.hades .tp-tab-price {
+     color: #999999;
+     display: block;
+     font-size: 16px;
+     line-height: 20px;
+     margin-top: 10px;
+     text-align: center;
+}
+
+.hades .tp-tab-button {
+     background: #219bd7 none repeat scroll 0% 0%;
+     border-radius: 4px;
+     color: #ffffff;
+     display: inline-block;
+     font-size: 14px;
+     font-weight: 400;
+     margin-top: 15px;
+     padding: 5px 15px;
+     text-align: center;
+}
+
+.hades .tp-tab-inner {
+     text-align: center;
+}
+
+.hebe.tparrows {
+     background: #ffffff none repeat scroll 0% 0%;
+     cursor: pointer;
+     display: block;
+     min-height: 70px;
+     min-width: 70px;
+     position: absolute;
+     z-index: 100;
+}
+
+.hebe.tparrows:hover {
+    
+}
+
+.hebe.tparrows::before {
+     background: #ffffff none repeat scroll 0% 0%;
+     color: #aaaaaa;
+     display: block;
+     font-family: "revicons";
+     font-size: 30px;
+     line-height: 70px;
+     min-height: 70px;
+     min-width: 70px;
+     position: relative;
+     text-align: center;
+     transition: color 0.3s ease 0s;
+     z-index: 2;
+}
+
+.hebe.tparrows.tp-leftarrow::before {
+     content: "";
+}
+
+.hebe.tparrows.tp-rightarrow::before {
+     content: "";
+}
+
+.hebe.tparrows:hover::before {
+     color: #000000;
+}
+
+.hebe .tp-title-wrap {
+     background: rgba(0, 0, 0, 0.75) none repeat scroll 0% 0%;
+     display: inline-block;
+     line-height: 60px;
+     margin-left: 0px;
+     min-height: 60px;
+     position: absolute;
+     top: -10px;
+     transform-origin: 0% 50% 0px;
+     transform: scaleX(0);
+     transition: transform 0.3s ease 0s;
+     z-index: 0;
+}
+
+.hebe.tp-rightarrow .tp-title-wrap {
+     right: 0px;
+}
+
+.hebe.tparrows:hover .tp-title-wrap {
+     transform: scaleX(1);
+}
+
+.hebe .tp-arr-titleholder {
+     color: #ffffff;
+     font-size: 12px;
+     font-weight: 600;
+     line-height: 90px;
+     padding: 0px 20px 0px 90px;
+     position: relative;
+     text-transform: uppercase;
+     white-space: nowrap;
+}
+
+.hebe.tp-rightarrow .tp-arr-titleholder {
+     margin-left: 0px;
+     padding: 0px 90px 0px 20px;
+}
+
+.hebe.tparrows:hover .tp-arr-titleholder {
+     opacity: 1;
+     transform: translateX(0px);
+     transition-delay: 0.1s;
+}
+
+.hebe .tp-arr-imgholder {
+     background-position: center center;
+     background-size: cover;
+     display: block;
+     height: 90px;
+     left: 100%;
+     position: absolute;
+     right: -90px;
+     top: 0px;
+     width: 90px;
+}
+
+.hebe.tp-rightarrow .tp-arr-imgholder {
+     left: -90px;
+     right: auto;
+}
+
+.hebe.tp-bullets {
+    
+}
+
+.hebe.tp-bullets::before {
+     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%;
+     box-sizing: content-box;
+     content: " ";
+     height: 100%;
+     margin-left: -10px;
+     margin-top: -10px;
+     padding: 10px;
+     position: absolute;
+     width: 100%;
+}
+
+.hebe .tp-bullet {
+     background: #ffffff none repeat scroll 0% 0%;
+     border-radius: 50%;
+     border: 5px solid #222222;
+     box-sizing: content-box;
+     cursor: pointer;
+     height: 3px;
+     position: absolute;
+     transform: translateZ(0.01px);
+     transition: all 0.3s ease 0s;
+     width: 3px;
+}
+
+.hebe .tp-bullet:hover, .hebe .tp-bullet.selected {
+     background: #222222 none repeat scroll 0% 0%;
+     border-color: #ffffff;
+}
+
+.hebe .tp-bullet-image {
+     background-position: center center;
+     background-size: cover;
+     border-radius: 6px;
+     height: 70px;
+     left: -40px;
+     opacity: 0;
+     position: absolute;
+     top: -90px;
+     transform-origin: 50% 100% 0px;
+     transform-style: flat;
+     transform: scale(0);
+     transition: all 0.3s ease 0s;
+     visibility: hidden;
+     width: 70px;
+}
+
+.hebe .tp-bullet:hover .tp-bullet-image {
+     display: block;
+     opacity: 1;
+     transform: scale(1);
+     visibility: visible;
+}
+
+.hebe .tp-bullet-title {
+    
+}
+
+.hebe .tp-tab-title {
+     color: #a8d8ee;
+     font-family: "Roboto Slab";
+     font-size: 13px;
+     font-weight: 700;
+     margin-bottom: 5px;
+     text-transform: uppercase;
+}
+
+.hebe .tp-tab-desc {
+     color: #ffffff;
+     font-family: "Roboto Slab";
+     font-size: 18px;
+     font-weight: 400;
+     line-height: 25px;
+}
+
+.hephaistos.tparrows {
+     background: rgba(0, 0, 0, 0.5) none repeat scroll 0% 0%;
+     border-radius: 50%;
+     cursor: pointer;
+     display: block;
+     height: 40px;
+     position: absolute;
+     width: 40px;
+     z-index: 100;
+}
+
+.hephaistos.tparrows:hover {
+     background: #000000 none repeat scroll 0% 0%;
+}
+
+.hephaistos.tparrows::before {
+     color: #ffffff;
+     display: block;
+     font-family: "revicons";
+     font-size: 18px;
+     line-height: 40px;
+     text-align: center;
+}
+
+.hephaistos.tparrows.tp-leftarrow::before {
+     content: "";
+     margin-left: -2px;
+}
+
+.hephaistos.tparrows.tp-rightarrow::before {
+     content: "";
+     margin-right: -2px;
+}
+
+.hephaistos.tp-bullets {
+    
+}
+
+.hephaistos.tp-bullets::before {
+     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%;
+     box-sizing: content-box;
+     content: " ";
+     height: 100%;
+     margin-left: -10px;
+     margin-top: -10px;
+     padding: 10px;
+     position: absolute;
+     width: 100%;
+}
+
+.hephaistos .tp-bullet {
+     background: #999999 none repeat scroll 0% 0%;
+     border-radius: 50%;
+     border: 3px solid #f5f5f5;
+     box-shadow: 0px 0px 2px 1px rgba(130, 130, 130, 0.3);
+     box-sizing: content-box;
+     cursor: pointer;
+     height: 12px;
+     position: absolute;
+     width: 12px;
+}
+
+.hephaistos .tp-bullet:hover, .hephaistos .tp-bullet.selected {
+     background: #ffffff none repeat scroll 0% 0%;
+     border-color: #000000;
+}
+
+.hephaistos .tp-bullet-image {
+    
+}
+
+.hephaistos .tp-bullet-title {
+    
+}
+
+.hermes.tparrows {
+     background: rgba(0, 0, 0, 0.5) none repeat scroll 0% 0%;
+     cursor: pointer;
+     display: block;
+     height: 110px;
+     position: absolute;
+     width: 30px;
+     z-index: 100;
+}
+
+.hermes.tparrows::before {
+     color: #ffffff;
+     display: block;
+     font-family: "revicons";
+     font-size: 15px;
+     line-height: 110px;
+     text-align: center;
+     transform: translateX(0px);
+     transition: all 0.3s ease 0s;
+}
+
+.hermes.tparrows.tp-leftarrow::before {
+     content: "";
+}
+
+.hermes.tparrows.tp-rightarrow::before {
+     content: "";
+}
+
+.hermes.tparrows.tp-leftarrow:hover::before {
+     opacity: 0;
+     transform: translateX(-20px);
+}
+
+.hermes.tparrows.tp-rightarrow:hover::before {
+     opacity: 0;
+     transform: translateX(20px);
+}
+
+.hermes .tp-arr-allwrapper {
+     height: 140px;
+     left: 0px;
+     overflow: hidden;
+     perspective: 1000px;
+     position: absolute;
+     top: 0px;
+     transition: transform 0.3s ease 0.3s;
+     visibility: hidden;
+     width: 180px;
+}
+
+.hermes.tp-rightarrow .tp-arr-allwrapper {
+     left: auto;
+     right: 0px;
+}
+
+.hermes.tparrows:hover .tp-arr-allwrapper {
+     visibility: visible;
+}
+
+.hermes .tp-arr-imgholder {
+     height: 110px;
+     left: 0px;
+     position: absolute;
+     top: 0px;
+     transform: translateX(-180px);
+     transition: all 0.3s ease 0.3s;
+     width: 180px;
+}
+
+.hermes.tp-rightarrow .tp-arr-imgholder {
+     transform: translateX(180px);
+}
+
+.hermes.tparrows:hover .tp-arr-imgholder {
+     transform: translateX(0px);
+}
+
+.hermes .tp-arr-titleholder {
+     background: rgba(0, 0, 0, 0.75) none repeat scroll 0% 0%;
+     box-sizing: border-box;
+     color: #ffffff;
+     display: block;
+     font-size: 12px;
+     font-weight: 600;
+     letter-spacing: 1px;
+     line-height: 30px;
+     padding: 0px 10px;
+     position: absolute;
+     text-align: left;
+     top: 110px;
+     transform-origin: 50% 0px 0px;
+     transform: rotateX(-90deg);
+     transition: all 0.3s ease 0s;
+     white-space: nowrap;
+     width: 180px;
+}
+
+.hermes.tparrows:hover .tp-arr-titleholder {
+     transform: rotateX(0deg);
+     transition-delay: 0.6s;
+}
+
+.hermes.tp-bullets {
+    
+}
+
+.hermes .tp-bullet {
+     background-color: transparent;
+     box-shadow: 0px 0px 0px 1px #999999 inset;
+     height: 10px;
+     overflow: hidden;
+     position: absolute;
+     transition: background 0.3s ease 0s;
+     width: 20px;
+}
+
+.hermes .tp-bullet:hover {
+     background-color: rgba(0, 0, 0, 0.2);
+}
+
+.hermes .tp-bullet::after {
+     background-color: #ea504e;
+     bottom: 0px;
+     box-shadow: 0px 0px 1px #ea504e;
+     content: " ";
+     height: 0px;
+     left: 0px;
+     position: absolute;
+     transition: height 0.3s ease 0s;
+     width: 100%;
+}
+
+.hermes .tp-bullet.selected::after {
+     height: 100%;
+}
+
+.hermes .tp-tab {
+     box-sizing: border-box;
+     opacity: 1;
+     padding-right: 10px;
+}
+
+.hermes .tp-tab-image {
+     height: 60%;
+     position: relative;
+     width: 100%;
+}
+
+.hermes .tp-tab-content {
+     background: #363636 none repeat scroll 0% 0%;
+     bottom: 0px;
+     box-sizing: border-box;
+     color: #ffffff;
+     display: block;
+     left: -10px;
+     min-height: 40%;
+     padding: 20px 20px 20px 30px;
+     position: absolute;
+     width: 100%;
+}
+
+.hermes .tp-tab-date {
+     color: #888888;
+     display: block;
+     font-size: 12px;
+     font-weight: 600;
+     margin-bottom: 10px;
+}
+
+.hermes .tp-tab-title {
+     color: #ffffff;
+     display: block;
+     font-size: 16px;
+     font-weight: 800;
+     line-height: 19px;
+     text-transform: uppercase;
+}
+
+.hermes .tp-tab.selected .tp-tab-title::after {
+     border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #363636;
+     border-style: solid;
+     border-width: 30px 0px 30px 10px;
+     bottom: 50%;
+     content: " ";
+     height: 0px;
+     margin-bottom: -30px;
+     position: absolute;
+     right: -9px;
+     width: 0px;
+}
+
+.hermes .tp-tab-mask {
+     padding-right: 10px ! important;
+}
+
+@media only screen and (max-width: 960px) {
+  .hermes .tp-tab .tp-tab-title { font-size: 14px; line-height: 16px; }
+  .hermes .tp-tab-date { font-size: 11px; line-height: 13px; margin-bottom: 10px; }
+  .hermes .tp-tab-content { padding: 15px 15px 15px 25px; }
+}
+
+@media only screen and (max-width: 768px) {
+  .hermes .tp-tab .tp-tab-title { font-size: 12px; line-height: 14px; }
+  .hermes .tp-tab-date { font-size: 10px; line-height: 12px; margin-bottom: 5px; }
+  .hermes .tp-tab-content { padding: 10px 10px 10px 20px; }
+}
+
+.hesperiden.tparrows {
+     background: rgba(0, 0, 0, 0.5) none repeat scroll 0% 0%;
+     border-radius: 50%;
+     cursor: pointer;
+     display: block;
+     height: 40px;
+     position: absolute;
+     width: 40px;
+     z-index: 100;
+}
+
+.hesperiden.tparrows:hover {
+     background: #000000 none repeat scroll 0% 0%;
+}
+
+.hesperiden.tparrows::before {
+     color: #ffffff;
+     display: block;
+     font-family: "revicons";
+     font-size: 20px;
+     line-height: 40px;
+     text-align: center;
+}
+
+.hesperiden.tparrows.tp-leftarrow::before {
+     content: "";
+     margin-left: -3px;
+}
+
+.hesperiden.tparrows.tp-rightarrow::before {
+     content: "";
+     margin-right: -3px;
+}
+
+.hesperiden.tp-bullets {
+    
+}
+
+.hesperiden.tp-bullets::before {
+     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%;
+     border-radius: 8px;
+     box-sizing: content-box;
+     content: " ";
+     height: 100%;
+     margin-left: -10px;
+     margin-top: -10px;
+     padding: 10px;
+     position: absolute;
+     width: 100%;
+}
+
+.hesperiden .tp-bullet {
+     background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #999999 0%, #e1e1e1 100%) repeat scroll 0% 0%;
+     border-radius: 50%;
+     border: 3px solid #e5e5e5;
+     box-sizing: content-box;
+     cursor: pointer;
+     height: 12px;
+     position: absolute;
+     width: 12px;
+}
+
+.hesperiden .tp-bullet:hover, .hesperiden .tp-bullet.selected {
+     background: #666666 none repeat scroll 0% 0%;
+}
+
+.hesperiden .tp-bullet-image {
+    
+}
+
+.hesperiden .tp-bullet-title {
+    
+}
+
+.hesperiden .tp-thumb {
+     opacity: 1;
+     perspective: 600px;
+}
+
+.hesperiden .tp-thumb .tp-thumb-title {
+     background-color: #000000;
+     bottom: 0px;
+     box-sizing: border-box;
+     color: #ffffff;
+     display: block;
+     font-size: 12px;
+     left: 0px;
+     margin-top: -10px;
+     opacity: 0;
+     overflow: hidden;
+     padding: 5px 10px;
+     position: absolute;
+     text-align: center;
+     transform-origin: 50% 100% 0px;
+     transform: rotateX(90deg) translateZ(0.001px);
+     transition: all 0.3s ease 0s;
+     white-space: nowrap;
+     width: 100%;
+     z-index: 1000;
+}
+
+.hesperiden .tp-thumb:hover .tp-thumb-title {
+     opacity: 1;
+     transform: rotateX(0deg);
+}
+
+.hesperiden .tp-tab {
+     border-bottom: 1px solid #e5e5e5;
+     box-sizing: border-box;
+     font-family: "Roboto",sans-serif;
+     opacity: 1;
+     padding: 10px;
+}
+
+.hesperiden .tp-tab-image {
+     display: inline-block;
+     float: left;
+     height: 60px;
+     max-height: 100%;
+     max-width: 100%;
+     position: relative;
+     width: 60px;
+}
+
+.hesperiden .tp-tab-content {
+     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%;
+     box-sizing: border-box;
+     color: #333333;
+     display: inline-block;
+     height: 100%;
+     left: 0px;
+     margin-top: -15px;
+     overflow: hidden;
+     padding: 15px 15px 15px 85px;
+     position: absolute;
+     width: 100%;
+}
+
+.hesperiden .tp-tab-date {
+     color: #aaaaaa;
+     display: block;
+     font-size: 12px;
+     font-weight: 500;
+     margin-bottom: 0px;
+}
+
+.hesperiden .tp-tab-title {
+     color: #333333;
+     display: block;
+     font-size: 14px;
+     font-weight: 500;
+     line-height: 17px;
+     text-align: left;
+     text-transform: none;
+}
+
+.hesperiden .tp-tab:hover, .hesperiden .tp-tab.selected {
+     background: #eeeeee none repeat scroll 0% 0%;
+}
+
+.hesperiden .tp-tab-mask {
+    
+}
+
+@media only screen and (max-width: 960px) {
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+.metis.tparrows {
+     background: #ffffff none repeat scroll 0% 0%;
+     box-sizing: border-box;
+     height: 60px;
+     padding: 10px;
+     transition: all 0.3s ease 0s;
+     width: 60px;
+}
+
+.metis.tparrows:hover {
+     background: rgba(255, 255, 255, 0.75) none repeat scroll 0% 0%;
+}
+
+.metis.tparrows::before {
+     color: #000000;
+     transition: all 0.3s ease 0s;
+}
+
+.metis.tparrows:hover::before {
+     transform: scale(1.5);
+}
+
+.metis .tp-bullet {
+     background: rgba(0, 0, 0, 0.25) none repeat scroll 0% 0%;
+     border-radius: 50%;
+     box-sizing: border-box;
+     height: 50px;
+     margin: 0px;
+     opacity: 1;
+     padding: 3px;
+     transition: all 0.3s ease 0s;
+     width: 50px;
+}
+
+.metis .tp-bullet-image {
+     background-position: center center;
+     background-size: cover;
+     border-radius: 50%;
+     box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25) inset;
+     box-sizing: border-box;
+     display: block;
+     height: 44px;
+     position: relative;
+     width: 44px;
+}
+
+.metis .tp-bullet-title {
+     background: rgba(0, 0, 0, 0.75) none repeat scroll 0% 0%;
+     border-radius: 4px;
+     bottom: 65px;
+     color: #ffffff;
+     display: inline-block;
+     left: 50%;
+     opacity: 0;
+     padding: 10px 30px;
+     position: absolute;
+     transform-origin: 50% 100% 0px;
+     transform: translateZ(0.001px) translateX(-50%) translateY(14px);
+     transition: all 0.3s ease 0s;
+     white-space: nowrap;
+}
+
+.metis .tp-bullet:hover .tp-bullet-title {
+     opacity: 1;
+     transform: rotateX(0deg) translateX(-50%);
+}
+
+.metis .tp-bullet.selected, .metis .tp-bullet:hover {
+     background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #ffffff 0%, #777777 100%) repeat scroll 0% 0%;
+}
+
+.metis .tp-bullet-title::after {
+     border-color: rgba(0, 0, 0, 0.75) rgba(0, 0, 0, 0) transparent;
+     border-style: solid;
+     border-width: 8px 8px 0px;
+     bottom: -8px;
+     content: " ";
+     height: 0px;
+     left: 50%;
+     margin-left: -8px;
+     position: absolute;
+     width: 0px;
+}
+
+.metis .tp-tab-number {
+     color: #ffffff;
+     display: inline-block;
+     float: left;
+     font-family: "Playfair Display";
+     font-size: 40px;
+     font-weight: 400;
+     line-height: 30px;
+     margin-right: 17px;
+     width: 50px;
+}
+
+.metis .tp-tab-mask {
+     left: 0px;
+     max-width: 90px ! important;
+     padding-left: 20px;
+     transition: padding-left 0.4s ease 0s, left 0.4s ease 0s, max-width 0.4s ease 0s;
+}
+
+.metis:hover .tp-tab-mask {
+     left: 50px;
+     max-width: 500px ! important;
+     padding-left: 0px;
+}
+
+.metis .tp-tab-divider {
+     border-right: 1px solid transparent;
+     display: inline-block;
+     float: left;
+     height: 30px;
+     margin-top: 5px;
+     width: 1px;
+}
+
+.metis .tp-tab-title {
+     color: #ffffff;
+     display: inline-block;
+     font-family: "Playfair Display";
+     font-size: 20px;
+     font-weight: 400;
+     line-height: 20px;
+     padding-left: 30px;
+     padding-top: 10px;
+     position: relative;
+     transform: translateX(-100%);
+     transition: all 0.4s ease 0s;
+}
+
+.metis .tp-tab-title-mask {
+     left: 67px;
+     overflow: hidden;
+     position: absolute;
+}
+
+.metis:hover .tp-tab-title {
+     transform: translateX(0px);
+}
+
+.metis .tp-tab {
+     opacity: 0.15;
+     transition: all 0.4s ease 0s;
+}
+
+.metis .tp-tab:hover, .metis .tp-tab.selected {
+     opacity: 1;
+}
+
+.metis .tp-tab.selected .tp-tab-divider {
+     border-right: 1px solid #cdb083;
+}
+
+.metis.tp-tabs {
+     max-width: 118px ! important;
+     padding-left: 50px;
+}
+
+.metis.tp-tabs::before {
+     background: rgba(0, 0, 0, 0.15) none repeat scroll 0% 0%;
+     border-right: 1px solid rgba(255, 255, 255, 0.1);
+     content: " ";
+     height: 100%;
+     left: 0px;
+     position: absolute;
+     top: 0px;
+     transition: all 0.4s ease 0s;
+     width: 88px;
+}
+
+.metis.tp-tabs:hover::before {
+     width: 118px;
+}
+
+@media (max-width: 499px) {
+  .metis.tp-tabs::before { background: rgba(0, 0, 0, 0.75) none repeat scroll 0% 0%; }
+}
+
+.persephone.tparrows {
+     background: rgba(200, 200, 200, 0.5) none repeat scroll 0% 0%;
+     border: 1px solid #f5f5f5;
+     cursor: pointer;
+     display: block;
+     height: 40px;
+     position: absolute;
+     width: 40px;
+     z-index: 100;
+}
+
+.persephone.tparrows:hover {
+     background: #333333 none repeat scroll 0% 0%;
+}
+
+.persephone.tparrows::before {
+     color: #ffffff;
+     display: block;
+     font-family: "revicons";
+     font-size: 15px;
+     line-height: 40px;
+     text-align: center;
+}
+
+.persephone.tparrows.tp-leftarrow::before {
+     content: "";
+}
+
+.persephone.tparrows.tp-rightarrow::before {
+     content: "";
+}
+
+.persephone.tp-bullets {
+    
+}
+
+.persephone.tp-bullets::before {
+     box-sizing: content-box;
+     content: " ";
+     height: 100%;
+     margin-left: -10px;
+     margin-top: -10px;
+     padding: 10px;
+     position: absolute;
+     width: 100%;
+}
+
+.persephone .tp-bullet {
+     background: #aaaaaa none repeat scroll 0% 0%;
+     border: 1px solid #e5e5e5;
+     box-sizing: content-box;
+     cursor: pointer;
+     height: 12px;
+     position: absolute;
+     width: 12px;
+}
+
+.persephone .tp-bullet:hover, .persephone .tp-bullet.selected {
+     background: #222222 none repeat scroll 0% 0%;
+}
+
+.persephone .tp-bullet-image {
+    
+}
+
+.persephone .tp-bullet-title {
+    
+}
+
+.uranus.tparrows {
+     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%;
+     height: 50px;
+     width: 50px;
+}
+
+.uranus.tparrows::before {
+     font-size: 40px;
+     height: 50px;
+     line-height: 50px;
+     transition: all 0.3s ease 0s;
+     width: 50px;
+}
+
+.uranus.tparrows:hover::before {
+     opacity: 0.75;
+}
+
+.uranus .tp-bullet {
+     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%;
+     border: 1px solid #999999;
+     height: 10px;
+     margin: 10px;
+     transition: box-shadow 0.3s ease 0s;
+     width: 20px;
+}
+
+.uranus .tp-bullet.selected, .uranus .tp-bullet:hover {
+     background: #ea504e none repeat scroll 0% 0%;
+     border-radius: 0px;
+     border: medium none;
+}
+
+.uranus .tp-bullet-inner {
+     background-color: transparent;
+     cursor: pointer;
+     height: 100%;
+     left: 0px;
+     outline: medium none;
+     position: absolute;
+     text-indent: -999em;
+     top: 0px;
+     transition: background-color 0.3s ease 0s, transform 0.3s ease 0s;
+     width: 100%;
+}
+
+.uranus .tp-bullet.selected .tp-bullet-inner, .uranus .tp-bullet:hover .tp-bullet-inner {
+     background-color: #ea504e;
+     transform: scale(0.4);
+}
+
+.zeus.tparrows {
+     background: rgba(0, 0, 0, 0.1) none repeat scroll 0% 0%;
+     border-radius: 35px;
+     cursor: pointer;
+     display: block;
+     min-height: 70px;
+     min-width: 70px;
+     overflow: hidden;
+     position: absolute;
+     z-index: 100;
+}
+
+.zeus.tparrows::before {
+     color: #ffffff;
+     display: block;
+     font-family: "revicons";
+     font-size: 20px;
+     line-height: 70px;
+     position: relative;
+     text-align: center;
+     z-index: 2;
+}
+
+.zeus.tparrows.tp-leftarrow::before {
+     content: "";
+}
+
+.zeus.tparrows.tp-rightarrow::before {
+     content: "";
+}
+
+.zeus .tp-title-wrap {
+     background: rgba(0, 0, 0, 0.5) none repeat scroll 0% 0%;
+     border-radius: 50%;
+     height: 100%;
+     left: 0px;
+     opacity: 0;
+     position: absolute;
+     top: 0px;
+     transform: scale(0);
+     transition: all 0.3s ease 0s;
+     width: 100%;
+}
+
+.zeus .tp-arr-imgholder {
+     background-position: center center;
+     background-size: cover;
+     border-radius: 50%;
+     height: 100%;
+     left: 0px;
+     position: absolute;
+     top: 0px;
+     transform: translateX(-100%);
+     transition: all 0.3s ease 0s;
+     width: 100%;
+}
+
+.zeus.tp-rightarrow .tp-arr-imgholder {
+     transform: translateX(100%);
+}
+
+.zeus.tparrows:hover .tp-arr-imgholder {
+     opacity: 1;
+     transform: translateX(0px);
+}
+
+.zeus.tparrows:hover .tp-title-wrap {
+     opacity: 1;
+     transform: scale(1);
+}
+
+.zeus .tp-bullet {
+     background-color: transparent;
+     border: 1px solid rgba(255, 255, 255, 0.3);
+     box-sizing: content-box;
+     height: 20px;
+     transition: opacity 0.3s ease 0s;
+     width: 10px;
+}
+
+.zeus .tp-bullet::after {
+     background-color: #ea504e;
+     content: "";
+     height: 100%;
+     left: 0px;
+     position: absolute;
+     transform-origin: 50% 50% 0px;
+     transform: scale(0);
+     transition: transform 0.3s ease 0s;
+     width: 100%;
+}
+
+.zeus .tp-bullet:hover::after, .zeus .tp-bullet.selected::after {
+     transform: scale(1.2);
+}
+
+.zeus .tp-bullet-image, .zeus .tp-bullet-imageoverlay {
+     backface-visibility: hidden;
+     background: rgba(0, 0, 0, 0.5) none repeat scroll center center / cover ;
+     border-radius: 4px;
+     bottom: 25px;
+     box-sizing: border-box;
+     height: 60px;
+     left: 50%;
+     margin-left: -65px;
+     opacity: 0;
+     position: absolute;
+     transform-origin: 50% 50% 0px;
+     transition: all 0.3s ease 0s;
+     visibility: hidden;
+     width: 135px;
+}
+
+.zeus .tp-bullet-title, .zeus .tp-bullet-imageoverlay {
+     transition: all 0.5s ease 0s;
+     z-index: 2;
+}
+
+.zeus .tp-bullet-title {
+     backface-visibility: hidden;
+     bottom: 45px;
+     color: #ffffff;
+     font-size: 13px;
+     font-weight: 600;
+     left: -57px;
+     line-height: 15px;
+     opacity: 0;
+     position: absolute;
+     text-align: center;
+     transform-origin: 50% 50% 0px;
+     transition: all 0.3s ease 0s;
+     vertical-align: middle;
+     visibility: hidden;
+     width: 135px;
+     z-index: 3;
+}
+
+.zeus .tp-bullet:hover .tp-bullet-title, .zeus .tp-bullet:hover .tp-bullet-image, .zeus .tp-bullet:hover .tp-bullet-imageoverlay {
+     opacity: 1;
+     transform: translateY(0px);
+     visibility: visible;
+}
+
+.zeus .tp-thumb {
+     opacity: 1;
+}
+
+.zeus .tp-thumb-over {
+     background: rgba(0, 0, 0, 0.25) none repeat scroll 0% 0%;
+     height: 100%;
+     left: 0px;
+     position: absolute;
+     top: 0px;
+     transition: all 0.3s ease 0s;
+     width: 100%;
+     z-index: 1;
+}
+
+.zeus .tp-thumb-more::before {
+     color: rgba(255, 255, 255, 0.75);
+     display: block;
+     font-family: "revicons";
+     font-size: 12px;
+     line-height: 12px;
+     position: absolute;
+     right: 20px;
+     text-align: left;
+     top: 20px;
+     z-index: 2;
+}
+
+.zeus .tp-thumb-more::before {
+     content: "";
+}
+
+.zeus .tp-thumb-title {
+     box-sizing: border-box;
+     color: #ffffff;
+     display: block;
+     font-family: "Raleway";
+     font-size: 12px;
+     font-weight: 500;
+     height: 100%;
+     left: 0px;
+     letter-spacing: 1px;
+     line-height: 15px;
+     padding: 20px 35px 20px 20px;
+     position: absolute;
+     text-align: left;
+     top: 0px;
+     transition: all 0.3s ease 0s;
+     width: 100%;
+     z-index: 2;
+}
+
+.zeus .tp-thumb.selected .tp-thumb-more::before, .zeus .tp-thumb:hover .tp-thumb-more::before {
+     color: #aaaaaa;
+}
+
+.zeus .tp-thumb.selected .tp-thumb-over, .zeus .tp-thumb:hover .tp-thumb-over {
+     background: #000000 none repeat scroll 0% 0%;
+}
+
+.zeus .tp-thumb.selected .tp-thumb-title, .zeus .tp-thumb:hover .tp-thumb-title {
+     color: #ffffff;
+}
+
+.zeus .tp-tab {
+     box-sizing: border-box;
+     opacity: 1;
+}
+
+.zeus .tp-tab-title {
+     background: rgba(0, 0, 0, 0.25) none repeat scroll 0% 0%;
+     color: #ffffff;
+     display: block;
+     font-family: "Roboto Slab",serif;
+     font-size: 13px;
+     font-weight: 700;
+     line-height: 13px;
+     padding: 9px 10px;
+     text-align: center;
+}
+
+.zeus .tp-tab:hover .tp-tab-title, .zeus .tp-tab.selected .tp-tab-title {
+     background: #ffffff none repeat scroll 0% 0%;
+     color: #000000;
+}
+
+.post-tabs .tp-thumb {
+     opacity: 1;
+}
+
+.post-tabs .tp-thumb-over {
+     background: #252525 none repeat scroll 0% 0%;
+     height: 100%;
+     left: 0px;
+     position: absolute;
+     top: 0px;
+     transition: all 0.3s ease 0s;
+     width: 100%;
+     z-index: 1;
+}
+
+.post-tabs .tp-thumb-more::before {
+     color: rgba(255, 255, 255, 0.75);
+     display: block;
+     font-family: "revicons";
+     font-size: 12px;
+     line-height: 12px;
+     position: absolute;
+     right: 15px;
+     text-align: left;
+     top: 15px;
+     z-index: 2;
+}
+
+.post-tabs .tp-thumb-more::before {
+     content: "";
+}
+
+.post-tabs .tp-thumb-title {
+     box-sizing: border-box;
+     color: #ffffff;
+     display: block;
+     font-family: "raleway";
+     font-size: 12px;
+     font-weight: 500;
+     height: 100%;
+     left: 0px;
+     letter-spacing: 1px;
+     line-height: 15px;
+     padding: 15px 30px 15px 15px;
+     position: absolute;
+     text-align: left;
+     top: 0px;
+     transition: all 0.3s ease 0s;
+     width: 100%;
+     z-index: 2;
+}
+
+.post-tabs .tp-thumb.selected .tp-thumb-more::before, .post-tabs .tp-thumb:hover .tp-thumb-more::before {
+     color: #aaaaaa;
+}
+
+.post-tabs .tp-thumb.selected .tp-thumb-over, .post-tabs .tp-thumb:hover .tp-thumb-over {
+     background: #ffffff none repeat scroll 0% 0%;
+}
+
+.post-tabs .tp-thumb.selected .tp-thumb-title, .post-tabs .tp-thumb:hover .tp-thumb-title {
+     color: #000000;
+}

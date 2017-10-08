@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* CSS Document */
+
+.yamm .nav, .yamm .collapse, .yamm .dropup, .yamm .dropdown {
+     position: static;
+}
+
+.yamm .dropdown.with-dropdown {
+     position: relative;
+}
+
+.yamm .container {
+     position: relative;
+}
+
+.yamm .dropdown-menu {
+     left: auto;
+}
+
+.yamm .yamm-content {
+     padding: 20px 30px;
+}
+
+.yamm .yamm-content .header-menu h4 {
+     color: #ffffff;
+     font-family: "OpenSans";
+     font-size: 13px;
+     letter-spacing: 2px;
+     margin: 0px;
+     padding: 25px 15px 10px;
+     text-transform: uppercase;
+}
+
+.yamm .yamm-content .header-menu h4 i {
+     border-radius: 0px;
+     color: #ffffff;
+     font-size: 18px;
+     height: 40px;
+     line-height: 40px;
+     margin-right: 10px;
+     text-align: center;
+     width: 40px;
+}
+
+.yamm .yamm-content div > a {
+     color: rgba(255, 255, 255, 0.5);
+     text-decoration: none;
+}
+
+.yamm .yamm-content ul li a {
+     display: block;
+     transition: all 0s ease 0s, all 0.3s ease 0s, all 0s ease 0s;
+}
+
+.yamm .yamm-content ul li a:hover {
+     color: #ea504e;
+     padding: 0px 17px 0px 23px;
+     text-decoration: none;
+}
+
+.yamm .dropdown.yamm-fw .dropdown-menu {
+     left: 0px;
+     right: 0px;
+}
